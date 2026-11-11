@@ -1,0 +1,6 @@
+interface:
+  display_name: "Hybrid Fit — gravações de tela"
+  short_description: "Stories estáticos por padrão; 3D/v2 quando solicitado"
+  default_prompt: "Use $hybrid-fit-screen-mockup para editar as gravações do Hybrid Fit com v1 por padrão ou v2 quando eu pedir 3D, nomear pela experiência e entregar no Drive; remova cada original de Cru após confirmar a entrega."
+policy:
+  allow_implicit_invocation: true

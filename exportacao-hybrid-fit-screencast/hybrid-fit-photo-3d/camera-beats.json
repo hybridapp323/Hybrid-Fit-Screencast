@@ -1,0 +1,226 @@
+[
+  {
+    "at": 0,
+    "d": 1.35,
+    "label": "estabelecer",
+    "c": {
+      "x": 0,
+      "y": 0,
+      "z": -50,
+      "scale": 1.22
+    },
+    "p": {
+      "rotationX": 24,
+      "rotationY": -24,
+      "rotationZ": 16
+    }
+  },
+  {
+    "at": 1.5,
+    "d": 1,
+    "label": "escolher-almoco",
+    "c": {
+      "x": 0,
+      "y": -80,
+      "z": 10,
+      "scale": 1.35
+    },
+    "p": {
+      "rotationX": 20,
+      "rotationY": -18,
+      "rotationZ": 12
+    }
+  },
+  {
+    "at": 2.8,
+    "d": 1,
+    "label": "selecionar-foto",
+    "c": {
+      "x": 0,
+      "y": -40,
+      "z": -30,
+      "scale": 1.22
+    },
+    "p": {
+      "rotationX": 18,
+      "rotationY": -20,
+      "rotationZ": 10
+    }
+  },
+  {
+    "at": 4.2,
+    "d": 3.6,
+    "label": "contexto-da-foto",
+    "c": {
+      "x": 12,
+      "y": -60,
+      "z": 5,
+      "scale": 1.29
+    },
+    "p": {
+      "rotationX": 20,
+      "rotationY": -22,
+      "rotationZ": 12
+    }
+  },
+  {
+    "at": 8.25,
+    "d": 1.25,
+    "label": "analisar-foto",
+    "c": {
+      "x": 0,
+      "y": -235,
+      "z": 80,
+      "scale": 1.72
+    },
+    "p": {
+      "rotationX": 12,
+      "rotationY": -12,
+      "rotationZ": 6
+    }
+  },
+  {
+    "at": 10,
+    "d": 2.3,
+    "label": "acompanhar-analise",
+    "c": {
+      "x": 0,
+      "y": -250,
+      "z": 105,
+      "scale": 1.79
+    },
+    "p": {
+      "rotationX": 10,
+      "rotationY": -10,
+      "rotationZ": 5
+    }
+  },
+  {
+    "at": 12.6,
+    "d": 1.1,
+    "label": "alimentos-detectados",
+    "c": {
+      "x": 0,
+      "y": -160,
+      "z": 70,
+      "scale": 1.58
+    },
+    "p": {
+      "rotationX": 9,
+      "rotationY": -9,
+      "rotationZ": 5
+    }
+  },
+  {
+    "at": 13.9,
+    "d": 1.1,
+    "label": "detalhes-da-analise",
+    "c": {
+      "x": 0,
+      "y": 125,
+      "z": 25,
+      "scale": 1.48
+    },
+    "p": {
+      "rotationX": 12,
+      "rotationY": -15,
+      "rotationZ": 9
+    }
+  },
+  {
+    "at": 15.25,
+    "d": 1.6,
+    "label": "avaliacao-nutricional",
+    "c": {
+      "x": 0,
+      "y": -140,
+      "z": 70,
+      "scale": 1.56
+    },
+    "p": {
+      "rotationX": 9,
+      "rotationY": -10,
+      "rotationZ": 5
+    }
+  },
+  {
+    "at": 17,
+    "d": 1.1,
+    "label": "lista-e-macros",
+    "c": {
+      "x": 0,
+      "y": 45,
+      "z": 35,
+      "scale": 1.49
+    },
+    "p": {
+      "rotationX": 12,
+      "rotationY": -15,
+      "rotationZ": 8
+    }
+  },
+  {
+    "at": 18.65,
+    "d": 1.1,
+    "label": "adicionar-refeicao",
+    "c": {
+      "x": 0,
+      "y": -100,
+      "z": 35,
+      "scale": 1.46
+    },
+    "p": {
+      "rotationX": 14,
+      "rotationY": -17,
+      "rotationZ": 10
+    }
+  },
+  {
+    "at": 20.25,
+    "d": 1,
+    "label": "dieta-atualizada",
+    "c": {
+      "x": 0,
+      "y": -95,
+      "z": 45,
+      "scale": 1.49
+    },
+    "p": {
+      "rotationX": 13,
+      "rotationY": -15,
+      "rotationZ": 9
+    }
+  },
+  {
+    "at": 22.3,
+    "d": 1,
+    "label": "salvar-alteracoes",
+    "c": {
+      "x": 0,
+      "y": -250,
+      "z": 40,
+      "scale": 1.53
+    },
+    "p": {
+      "rotationX": 12,
+      "rotationY": -13,
+      "rotationZ": 7
+    }
+  },
+  {
+    "at": 24.1,
+    "d": 1.2,
+    "label": "retorno-a-dieta",
+    "c": {
+      "x": 25,
+      "y": 0,
+      "z": -130,
+      "scale": 1.03
+    },
+    "p": {
+      "rotationX": 24,
+      "rotationY": -24,
+      "rotationZ": 16
+    }
+  }
+]

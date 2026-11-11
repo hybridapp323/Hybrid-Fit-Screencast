@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>Hybrid Fit — Stories Mockup 01</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#080F1B}
+#root{width:100%;height:100%;position:relative;overflow:hidden;isolation:isolate}
+.backdrop{position:absolute;inset:0;background:radial-gradient(ellipse 810px 1130px at 12% 40%,#173d79 0%,#112b54 35%,#0b1a30 66%,#080f1b 100%)}
+.light{position:absolute;inset:0;background:radial-gradient(ellipse 660px 740px at 48% 68%,#2563b335 0%,#12356916 50%,transparent 80%)}
+/* Device Frame Stage material model adapted to a fixed frontal phone.
+   The capture already contains Dynamic Island and real status indicators. */
+.device-frame{position:absolute;left:254px;top:510px;width:572px;height:1202px;transform:scale(1.18);transform-origin:center center;border-radius:88px;background:linear-gradient(145deg,#d8dce1 0%,#a8adb5 10%,#434b57 24%,#919aa7 43%,#d2d9e2 61%,#4b5666 79%,#aeb8c6 100%);border:1px solid #c3d3e078;box-shadow:0 52px 110px #02071080,0 18px 38px #02071065,0 3px 9px #0008,inset 0 1px 0 #ffffff80,inset 0 0 0 1px #0008}
+.rim{position:absolute;inset:4px;border-radius:84px;background:#05070a;box-shadow:inset 0 0 0 2px #151d28,inset 0 1px 1px #e9f0fb66}
+.device-screen{position:absolute;left:15px;top:15px;width:540px;height:1170px;border-radius:72px;overflow:hidden;isolation:isolate;background:#0c0f13;box-shadow:0 0 0 1px #000}
+#screen{position:absolute;inset:0;width:540px;height:1170px;display:block;object-fit:contain;border-radius:72px}
+.button{position:absolute;width:5px;border-radius:3px;background:linear-gradient(90deg,#536070,#cbd3dc,#657180)}
+.action{left:-5px;top:159px;height:32px}.volume-up{left:-5px;top:228px;height:71px}.volume-down{left:-5px;top:321px;height:71px}.power{right:-5px;top:261px;height:115px}
+.antenna{position:absolute;width:5px;height:7px;background:#404955b3}.antenna.a{left:0;top:106px}.antenna.b{right:0;top:106px}.antenna.c{left:0;bottom:109px}.antenna.d{right:0;bottom:109px}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="59.263333" data-width="1080" data-height="1920">
+<div class="backdrop" aria-hidden="true"></div><div class="light" aria-hidden="true"></div>
+<div class="device-frame" data-layout-allow-overflow>
+<div class="button action"></div><div class="button volume-up"></div><div class="button volume-down"></div><div class="button power"></div>
+<div class="rim"></div>
+<div class="device-screen"><video id="screen" class="clip" src="assets/capture-1639ebb2ea22.mp4" data-start="0" data-duration="59.263333" data-track-index="1" muted playsinline preload="auto"></video></div>
+<div class="antenna a"></div><div class="antenna b"></div><div class="antenna c"></div><div class="antenna d"></div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({paused:true});
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "model": "stories-3d-v2",
+  "approvedOn": "2026-10-05",
+  "approval": "Usuario aprovou o exemplo e pediu salvar como opcao explicita 3D/v2; o modelo estatico continua padrao.",
+  "reference": {
+    "path": "references/phone-3d-reference.mp4",
+    "originalName": "ssstwitter.com_1791219255152 (2).mp4",
+    "sha256": "1076fb28e03b7e56fcf959644f2c745ce8b1314fd3807af5ece95b7cb277f630"
+  },
+  "source": {
+    "path": "incoming/1pIkFnceVMcHhvqmai7jpjR3O6oDrufht.mov",
+    "driveId": "1pIkFnceVMcHhvqmai7jpjR3O6oDrufht",
+    "sha256": "984d5441b0f72cd855fdcddcdcb2d5fb3deddaec319e7672ec1d6f6cc8b7646d"
+  },
+  "capture": {
+    "path": "assets/analysis-photo-seekable.mp4",
+    "sha256": "ba1562cdebf60ac7e71f87f4265010d0e22dfdf4b0bf7ef18834a6aaf4f33e10",
+    "notes": "Mesmos quadros decodificados da captura usada no render aprovado; GOP curto para seek. Ver qa/seekable-equivalence.json."
+  },
+  "example": {
+    "composition": "templates/approved-example.html.template",
+    "plan": "camera-plan.example.json",
+    "video": "renders/experiencia-analise-foto-modelo-3d.mp4",
+    "sha256": "ba834e95a264378babc4a7a5ef02335c429febb053055d3c3fff49cbed73d39b",
+    "driveUrl": "https://drive.google.com/file/d/1Sbvnjc3AFrCU2XCD6ae_X_nIE6fZXb8O/view?usp=drivesdk",
+    "durationSeconds": 25.566667,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "audio": false
+  }
+}

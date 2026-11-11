@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-resolution="portrait">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>Hybrid Fit — análise por foto — modelo 3D</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#080F1B}
+#root{width:100%;height:100%;position:relative;overflow:hidden;isolation:isolate}
+.backdrop{position:absolute;inset:0;background:radial-gradient(ellipse 970px 1450px at 12% 42%,#173D79 0%,#112B54 35%,#0B1A30 66%,#080F1B 100%)}
+.ambient-light{position:absolute;inset:0;background:radial-gradient(ellipse 660px 960px at 48% 57%,#3C83F633 0%,#3C83F611 48%,transparent 76%);transform-origin:center}
+.ground-shadow{position:absolute;left:65px;top:1590px;width:950px;height:200px;background:radial-gradient(ellipse closest-side,#05070A99,transparent);transform-origin:center}
+.stage{position:absolute;inset:0;perspective:2400px;perspective-origin:540px 960px}
+#camera{position:absolute;left:254px;top:359px;width:572px;height:1202px;transform-style:preserve-3d;transform-origin:center;will-change:transform}
+#device{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:center;will-change:transform}
+.body-layer{position:absolute;inset:0;border-radius:88px;background:linear-gradient(145deg,#D8DCE1 0%,#A8ADB5 10%,#434B57 24%,#919AA7 43%,#D2D9E2 61%,#4B5666 79%,#AEB8C6 100%);border:1px solid #AEB8C688;backface-visibility:hidden}
+.rear{background:#151D28;box-shadow:0 36px 80px #05070A55}
+.front{position:absolute;inset:0;border-radius:88px;background:linear-gradient(145deg,#D8DCE1 0%,#A8ADB5 10%,#434B57 24%,#919AA7 43%,#D2D9E2 61%,#4B5666 79%,#AEB8C6 100%);border:1px solid #D2D9E280;box-shadow:inset 0 1px 0 #E9F0FB99,inset 0 0 0 1px #05070A99;transform:translateZ(1px);backface-visibility:hidden}
+.rim{position:absolute;inset:4px;border-radius:84px;background:#05070A;box-shadow:inset 0 0 0 2px #151D28,inset 0 1px 1px #E9F0FB66}
+.device-screen{position:absolute;left:15px;top:15px;width:540px;height:1170px;border-radius:72px;overflow:hidden;background:#05070A;box-shadow:0 0 0 1px #05070A}
+#screen{position:absolute;inset:0;width:540px;height:1170px;display:block;object-fit:contain;border-radius:72px}
+.button{position:absolute;width:7px;border-radius:4px;background:linear-gradient(90deg,#536070,#CBD3DC,#657180);box-shadow:0 1px 2px #05070A99;transform:translateZ(-16px)}
+.action{left:-6px;top:159px;height:32px}.volume-up{left:-6px;top:228px;height:71px}.volume-down{left:-6px;top:321px;height:71px}.power{right:-6px;top:261px;height:115px}
+.antenna{position:absolute;width:4px;height:8px;background:#404955;transform:translateZ(-16px)}
+.antenna.a{left:0;top:106px}.antenna.b{right:0;top:106px}.antenna.c{left:0;bottom:109px}.antenna.d{right:0;bottom:109px}
+.usb{position:absolute;left:259px;top:1198px;width:54px;height:10px;border-radius:5px;background:#05070A;box-shadow:inset 0 0 0 2px #536070;transform:translateZ(-18px) rotateX(90deg)}
+.speaker{position:absolute;left:160px;top:1198px;width:60px;height:5px;background:repeating-linear-gradient(90deg,#05070A 0 3px,transparent 3px 8px);transform:translateZ(-18px) rotateX(90deg)}
+.speaker.right{left:352px}
+</style>
+</head>
+<body>
+<div data-hf-id="hf-f4kv" id="root" data-composition-id="main" data-start="0" data-duration="30.600000" data-width="1080" data-height="1920" data-fps="30">
+  <div data-hf-id="hf-qnnn" class="backdrop" aria-hidden="true"></div>
+  <div data-hf-id="hf-mtv0" class="ambient-light" aria-hidden="true"></div>
+  <div data-hf-id="hf-bbtt" class="ground-shadow" aria-hidden="true"></div>
+  <div data-hf-id="hf-tan6" class="stage">
+    <div data-hf-id="hf-j2lh" id="camera" data-layout-allow-overflow="">
+      <div data-hf-id="hf-p9im" id="device" data-layout-allow-overflow="">
+        <div data-hf-id="hf-1glr" class="body-layer rear" style="transform:translateZ(-36px)"></div>
+        <div data-hf-id="hf-wk79" class="front">
+          <div data-hf-id="hf-5gs0" class="rim"></div>
+          <div data-hf-id="hf-knsr" class="device-screen"><video data-hf-id="hf-b195" id="screen" class="clip" src="assets/capture-2b233c1f42e2e604b521bd34366c2eefb10378c7062b0bfff5ddf9d299e3d597.mp4" data-start="0" data-duration="30.600000" data-track-index="1" muted playsinline preload="auto"></video></div>
+        </div>
+        <div data-hf-id="hf-b3ui" class="button action"></div><div data-hf-id="hf-q39g" class="button volume-up"></div><div data-hf-id="hf-q8wr" class="button volume-down"></div><div data-hf-id="hf-7rqv" class="button power"></div>
+        <div data-hf-id="hf-liu0" class="antenna a"></div><div data-hf-id="hf-webn" class="antenna b"></div><div data-hf-id="hf-sg7m" class="antenna c"></div><div data-hf-id="hf-9ohx" class="antenna d"></div>
+        <div data-hf-id="hf-sh4m" class="usb"></div><div data-hf-id="hf-1par" class="speaker"></div><div data-hf-id="hf-zah9" class="speaker right"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+// Material plates are built once, at load. Every plate belongs to the same
+// rigid 3D object; the recording is placed once and stays continuous.
+const device = document.getElementById("device");
+const front = device.querySelector(".front");
+for (let depth = 35; depth >= 1; depth--) {
+  const layer = document.createElement("div");
+  layer.className = "body-layer";
+  layer.setAttribute("aria-hidden", "true");
+  layer.style.transform = `translateZ(${-depth}px)`;
+  device.insertBefore(layer, front);
+}
+const tl = gsap.timeline({paused:true});
+tl.set("#camera", {"x":30,"y":-15,"z":-200,"scale":1.01},0);
+tl.set("#device", {"rotationX":26,"rotationY":-22,"rotationZ":16},0);
+// Absolute pose ladder. Camera and object each own disjoint transform channels.
+tl.addLabel("contexto-inicial",0);
+tl.to("#camera", {"x":0,"y":0,"z":-50,"scale":1.22,"duration":1.4,"ease":"power2.inOut"},0);
+tl.to("#device", {"rotationX":24,"rotationY":-24,"rotationZ":16,"duration":1.4,"ease":"power2.inOut"},0);
+tl.addLabel("abrir-provas",3.5);
+tl.to("#camera", {"x":0,"y":-90,"z":10,"scale":1.35,"duration":1.2,"ease":"power2.inOut"},3.5);
+tl.to("#device", {"rotationX":18,"rotationY":-18,"rotationZ":10,"duration":1.2,"ease":"power2.inOut"},3.5);
+tl.addLabel("clima-prova-alvo",5.3);
+tl.to("#camera", {"x":0,"y":-180,"z":55,"scale":1.55,"duration":1,"ease":"power2.inOut"},5.3);
+tl.to("#device", {"rotationX":10,"rotationY":-10,"rotationZ":5,"duration":1,"ease":"power2.inOut"},5.3);
+tl.addLabel("abrir-cadastro",7);
+tl.to("#camera", {"x":0,"y":0,"z":-20,"scale":1.25,"duration":1,"ease":"power2.inOut"},7);
+tl.to("#device", {"rotationX":18,"rotationY":-20,"rotationZ":10,"duration":1,"ease":"power2.inOut"},7);
+tl.addLabel("nome-local",9.4);
+tl.to("#camera", {"x":0,"y":-35,"z":35,"scale":1.48,"duration":1.1,"ease":"power2.inOut"},9.4);
+tl.to("#device", {"rotationX":12,"rotationY":-13,"rotationZ":7,"duration":1.1,"ease":"power2.inOut"},9.4);
+tl.addLabel("escolher-data",12.2);
+tl.to("#camera", {"x":0,"y":-110,"z":50,"scale":1.53,"duration":1.2,"ease":"power2.inOut"},12.2);
+tl.to("#device", {"rotationX":10,"rotationY":-11,"rotationZ":6,"duration":1.2,"ease":"power2.inOut"},12.2);
+tl.addLabel("dados-da-prova",15.7);
+tl.to("#camera", {"x":0,"y":-95,"z":35,"scale":1.46,"duration":1.2,"ease":"power2.inOut"},15.7);
+tl.to("#device", {"rotationX":12,"rotationY":-15,"rotationZ":8,"duration":1.2,"ease":"power2.inOut"},15.7);
+tl.addLabel("confirmacao",18.2);
+tl.to("#camera", {"x":0,"y":60,"z":-20,"scale":1.25,"duration":1.1,"ease":"power2.inOut"},18.2);
+tl.to("#device", {"rotationX":18,"rotationY":-18,"rotationZ":10,"duration":1.1,"ease":"power2.inOut"},18.2);
+tl.addLabel("prova-cadastrada",20.2);
+tl.to("#camera", {"x":0,"y":-90,"z":25,"scale":1.42,"duration":1.1,"ease":"power2.inOut"},20.2);
+tl.to("#device", {"rotationX":13,"rotationY":-13,"rotationZ":7,"duration":1.1,"ease":"power2.inOut"},20.2);
+tl.addLabel("aproximar-clima-data-da-prova",23.2);
+tl.to("#camera", {"x":0,"y":-250,"z":75,"scale":1.72,"duration":1.3,"ease":"power2.inOut"},23.2);
+tl.to("#device", {"rotationX":8,"rotationY":-8,"rotationZ":4,"duration":1.3,"ease":"power2.inOut"},23.2);
+tl.addLabel("retorno-provas",25.9);
+tl.to("#camera", {"x":0,"y":-100,"z":15,"scale":1.38,"duration":1,"ease":"power2.inOut"},25.9);
+tl.to("#device", {"rotationX":14,"rotationY":-16,"rotationZ":8,"duration":1,"ease":"power2.inOut"},25.9);
+tl.addLabel("fechamento",28.8);
+tl.to("#camera", {"x":25,"y":0,"z":-130,"scale":1.03,"duration":1.3,"ease":"power2.inOut"},28.8);
+tl.to("#device", {"rotationX":24,"rotationY":-24,"rotationZ":16,"duration":1.3,"ease":"power2.inOut"},28.8);
+tl.fromTo(".ambient-light", {x:-45,y:25,scale:0.98}, {x:55,y:-30,scale:1.08,duration:30.6,ease:"sine.inOut"},0);
+tl.to(".ground-shadow", {"scaleX":0.85,"opacity":0.65,"duration":1.3,"ease":"power2.inOut"},23.2);
+tl.to(".ground-shadow", {"scaleX":1,"opacity":1,"duration":1.3,"ease":"power2.inOut"},28.8);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

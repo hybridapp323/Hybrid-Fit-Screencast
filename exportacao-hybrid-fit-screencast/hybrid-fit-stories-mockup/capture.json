@@ -1,0 +1,16 @@
+{
+  "source": "C:\\dev\\videos\\hybrid-fit-stories-mockup\\incoming\\1CE83Ti8OUfUszqaGG4m2HIDwiWF4F81E.mp4",
+  "sha256": "1639ebb2ea227c8b69f404fe9c12a2c01b2cfa66b37b5ab4f1765755d3fe9527",
+  "asset": "assets/capture-1639ebb2ea22.mp4",
+  "width": 1320,
+  "height": 2868,
+  "duration": 59.263333,
+  "output": {
+    "audio": false,
+    "fps": 30,
+    "width": 1080,
+    "height": 1920
+  },
+  "layout": "Hybrid Fit Stories 01",
+  "sourcePreserved": true
+}
